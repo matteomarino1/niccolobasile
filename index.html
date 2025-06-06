@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niccolò Basile - Designer </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="bg-animation" id="bgAnimation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logonico.png" alt="NB Designer Logo" class="logo-img">
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showSection('home')">Home</a></li>
+                <li><a href="#" onclick="showSection('about')">Who I Am</a></li>
+                <li><a href="#" onclick="showSection('cv')">CV</a></li>
+                <li><a href="#" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#" onclick="showSection('contacts')">Contacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="section active" id="home">
+        <div class="container">
+            <div class="hero">
+                <p class="hero-subtitle">Creative Designer & Digital Artist</p>
+                <p>Trasformo idee in esperienze visive straordinarie</p>
+                <button class="cta-button" onclick="showSection('projects')">Esplora i miei progetti</button>
+                <div class="scroll-indicator">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Who I Am section in home -->
+            <div class="about-home">
+                <div class="about-image">
+                    <div class="profile-container">
+                        <div class="profile-bg"></div>
+                        <img src="nico.png" alt="Niccolò Basile" class="profile-image">
+                        <div class="floating-elements">
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                            <div class="floating-element"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <h2 class="about-title">Who I Am</h2>
+                    <p class="about-description">
+                        Sono un designer italiano con una passione per la creazione di esperienze visive memorabili. Con un background in design grafico e una specializzazione in UI/UX, ho lavorato con aziende di tutto il mondo per trasformare le loro visioni in realtà digitali.
+                        <br><br>
+                        La mia filosofia si basa sull'equilibrio tra estetica e funzionalità, creando design che non solo sono belli da vedere, ma che risolvono problemi reali e migliorano l'esperienza dell'utente.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Anni di Esperienza</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Progetti Completati</span>
+                        </div>
+                        
+                    </div>
+                    <div class="specialty-tags">
+                        <span class="specialty-tag">UI/UX Design</span>
+                        <span class="specialty-tag">Brand Identity</span>
+                        <span class="specialty-tag">Motion Graphics</span>
+                        <span class="specialty-tag">Digital Illustration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who I Am Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="rhino.png" alt="Rhino 7">
+                    <h4>Rhino 7</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="vray.png" alt="V-Ray">
+                    <h4>V-Ray</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="keyshot.jpg" alt="KeyShot">
+                    <h4>KeyShot</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="lumion.png" alt="Lumion">
+                    <h4>Lumion</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="adobe.png" alt="Adobe">
+                    <h4>Adobe</h4>
+                </div>
+                <div class="skill-item">
+                    <img src="autocad.jpg" alt="AutoCAD">
+                    <h4>AutoCAD</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Section -->
+    <section class="section" id="cv">
+        <div class="container">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-gradient">MASTER DEGREE IN DESIGN</h3>
+                        <h4>Laurea Magistrale</h4>
+                        <p><strong>2021 - 2023</strong></p>
+                        <p>Laurea Magistrale presso l'Università degli Studi di Firenze.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-gradient">THREE-YEAR DEGREE IN DESIGN</h3>
+                        <h4>Laurea Triennale </h4>
+                        <p><strong>2018 - 2021</strong></p>
+                        <p>Laurea triennale presso l'Universitàdegli Studi di Pescara.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-gradient">JOINERY WORK AS APPRENTICE</h3>
+                        <h4>Design Agency </h4>
+                        <p><strong>2017 - 2017</strong></p>
+                        <p>Supporto nella creazione di materiali grafici e campagne pubblicitarie.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="text-gradient"> SCIENTIFIC HIGH SCHOOL DIPLOMA-APPLIED SCIENCES OPTION</h3>
+                        <h4>Diploma </h4>
+                        <p><strong>2013 - 2018</strong></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">I Miei Progetti</h2>
+            <div class="grid">
+                <div class="project-item"> 
+                    <div class="project-image-container">
+                        <img src="1.png" alt="ArmDryer" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">ArmDryer</h3>
+                    <p>A new way of drying.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Branding</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Logo Design</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img src="2.png" alt="iDro" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">iDro</h3>
+                    <p>Domestic purifier.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img src="3.png" alt="Reading Sofa" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">Reading Sofa</h3>
+                    <p>A 360 sofa for your rest.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <div class="project-image-container">
+                        <img src="4.png" alt="Perpetual Chair" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">Perpetual Chair</h3>
+                    <p>A chair for your Perpetual thoughts.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div> <!-- Chiusura del project-item di Perpetual Chair -->
+
+                <div class="project-item"> <!-- Inizio nuovo project-item (Tavolino Venezia) -->
+                    <div class="project-image-container">
+                        <img src="5.png" alt="Tavolino Venezia" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">Tavolino Venezia </h3>
+                    <p>Dreaming Italy.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div> <!-- Chiusura del project-item di Tavolino Venezia -->
+
+                <div class="project-item"> <!-- Inizio nuovo project-item (Qua) -->
+                    <div class="project-image-container">
+                        <img src="6.png" alt="Qua" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">Qua</h3>
+                    <p>Innovative,smart,curios.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div> <!-- Chiusura del project-item di Qua -->
+
+                <div class="project-item"> <!-- Inizio nuovo project-item (PlayStation Oversense) -->
+                    <div class="project-image-container">
+                        <img src="7.png" alt="PlayStation Oversense" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">PlayStation Oversense</h3>
+                    <p>Play like never before.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div> <!-- Chiusura del project-item di PlayStation Oversense -->
+
+                <div class="project-item"> <!-- Inizio nuovo project-item (Ho-Clock) -->
+                    <div class="project-image-container">
+                        <img src="8.png" alt="Ho-Clock" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">Ho-Clock</h3> <!-- Corretto da Ho-Clocl -->
+                    <p>Future Table Game.</p>
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">UI/UX</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Mobile</span>
+                    </div>
+                </div> <!-- Chiusura del project-item di Ho-Clock -->
+
+                <div class="project-item"> <!-- Inizio nuovo project-item (Hoplite) -->
+                    <div class="project-image-container">
+                        <img src="9.png" alt="Hoplite" class="project-image">
+                    </div>
+                    <h3 class="text-gradient">Hoplite</h3>
+                    <p>Descrizione progetto Hoplite.</p> <!-- Aggiungi una descrizione -->
+                    <div style="margin-top: 15px;">
+                        <span style="background: rgba(0, 245, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Tag1</span>
+                        <span style="background: rgba(255, 0, 255, 0.2); padding: 5px 10px; border-radius: 15px; font-size: 0.8rem;">Tag2</span>
+                    </div>
+                </div> <!-- Chiusura del project-item di Hoplite -->
+
+            </div> <!-- Chiusura della class="grid" -->
+        </div> <!-- Chiusura della class="container" -->
+    </section> <!-- Chiusura della section -->
+
+    <!-- Contacts Section -->
+    <section class="section" id="contacts">
+        <div class="container">
+            <h2 class="section-title">Contattami</h2>
+            <p style="font-size: 1.2rem; margin-bottom: 50px;">Pronto per il prossimo progetto? Parliamone!</p>
+            
+            <div class="grid">
+                <div class="card-3d">
+                    <h3 class="text-gradient">Informazioni di Contatto</h3>
+                    <div style="text-align: left; margin-top: 20px;">
+                        <p style="margin: 10px 0;"><strong>Email:</strong> niccolobasile.design@gmail.com</p>
+                        <p style="margin: 10px 0;"><strong>Telefono:</strong> +39 123 456 7890</p>
+                        <p style="margin: 10px 0;"><strong>LinkedIn:</strong> linkedin.com/in/niccolobasile</p>
+                        <p style="margin: 10px 0;"><strong>Portfolio:</strong> niccolobasile.design</p>
+                    </div>
+                </div>
+                
+                <div class="card-3d">
+                    <h3 class="text-gradient">Inviami un Messaggio</h3>
+                    <form class="contact-form" style="text-align: left;">
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Messaggio</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+         
+    </section>
+ <!-- Footer -->
+ <footer class="footer">
+    <div class="social-links">
+       <a href="mailto:niccolobasile.design@gmail.com" class="social-link" title="Email">✉️</a>
+       <a href="https://www.instagram.com/_niccolobasile" target="_blank" rel="noopener noreferrer" class="social-link" title="Instagram">📸</a> 
+       <a href="https://github.com/tuo_username" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">🐱</a>
+
+    </div>
+    <div class="legal-links">
+        <a href="index.html" class="legal-link">Home</a>
+        <a href="cookies.html" class="legal-link">Cookie Policy</a>
+    </div>
+    <div class="footer-copyright">
+        <p>&copy; 2025 <span class="highlight">Niccolò Basile </span> | Tutti i diritti riservati.</p>
+        <p class="signature">Web by <span class="highlight">Matteo Marino</span></p>
+    </div>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
