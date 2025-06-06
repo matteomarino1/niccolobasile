@@ -680,18 +680,20 @@ body {
 
 .project-image-container {
     width: 100%;
-    height: 200px; /* Puoi aggiustare l'altezza come preferisci */
+    height: 250px; /* Aumentata l'altezza per mostrare più contenuto */
     border-radius: 10px;
-    overflow: hidden; /* Per assicurare che l'immagine stia dentro i bordi arrotondati */
-    margin-bottom: 20px; /* Spazio tra immagine e titolo */
-    transition: transform 0.4s ease, box-shadow 0.4s ease; /* Transizioni per l'hover */
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative; /* Aggiunto per gestire meglio il posizionamento dell'immagine */
 }
 
 .project-image {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Assicura che l'immagine copra il contenitore mantenendo le proporzioni */
-    transition: transform 0.4s ease; /* Transizione per l'effetto zoom sull'hover dell'immagine */
+    object-fit: contain; /* Cambiato da 'cover' a 'contain' per mostrare l'immagine intera */
+    background-color: rgba(0, 0, 0, 0.2); /* Sfondo leggero per le immagini con trasparenza */
+    transition: transform 0.4s ease;
 }
 
 .project-item:hover .project-image-container {
